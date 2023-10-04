@@ -18,7 +18,7 @@ public class ExceptionMappers {
     @Inject
     Logger log;
 
-    @ServerExceptionMapper
+    //@ServerExceptionMapper
     public Response mapException(Exception e) {
         log.infof("Converting exception %s to response%n", e);
         return Response.status(Response.Status.BAD_REQUEST).build();
